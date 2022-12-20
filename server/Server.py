@@ -589,19 +589,6 @@ def check_list_output(clicks, value, session_id):
                                    only_new_features=True)
         new_test = feature_append(r, x_test, code_importance_dict[:len(code_importance_dict) // 2],
                                    only_new_features=True)
-        # fi_df.to_csv("111.csv")
-        # feature_dataframe.to_csv("222.csv")
-        # x_train.to_csv("111.csv")
-        # new_train.to_csv("222.csv")
-        # y_train.to_csv("333.csv")
-        # with open('111.csv', 'w', encoding='utf8', newline='') as f:
-        #     writer = csv.writer(f)
-        #     writer.writerows(x_train)
-        # with open('222.csv', 'w', encoding='utf8', newline='') as f:
-        #     writer = csv.writer(f)
-        #     writer.writerows(new_train)
-        # y_train.to_csv("333.csv")
-
         scores_difference(x_train, x_test, new_train, new_test, y_train, y_test, session_id)
 
         with open("temp/" + str(session_id) + ".png", 'rb') as img_obj:
