@@ -81,6 +81,10 @@
 
 ![feature-selection](./figure/feature-selection.png)
 
+### 多目标算子
+
+NSGA-2、NSGA-3、Lexicase、IBEA、SPEA2
+
 ### 训练结果
 
 前三种任务类型显示的是预测值、实际值和偏差。第四种显示的是特征选择方案。
