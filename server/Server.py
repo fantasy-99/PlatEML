@@ -315,11 +315,11 @@ def server_layout_page(pathname, session_id):
     main_page = [html.Div(
                 # Banner
                 [
-                html.Div(
-                id="banner",
-                className="banner",
-                children=[html.Img(src=app.get_asset_url("plotly_logo.png"))],
-                ),
+                # html.Div(
+                # id="banner",
+                # className="banner",
+                # children=[html.Img(src=app.get_asset_url("plotly_logo.png"))],
+                # ),
                 html.H4(children=f"ECNU {translate[global_dict[session_id]['language']]['Interpretable_Machine']}",
                         style={'text-align': 'center', 'font-weight': 'bold'}),
 
